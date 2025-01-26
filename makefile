@@ -81,7 +81,7 @@ bin/untar: untar.c | bin
 unxz: bin/unxz
 
 bin/unxz: unxz.c | bin
-	$(CC) $(CFLAGS) -Wno-incompatible-pointer-types unxz.c M2libc/bootstrappable.c -o $@
+	$(CC) $(CFLAGS) unxz.c M2libc/bootstrappable.c -o $@
 
 wrap: bin/wrap
 
